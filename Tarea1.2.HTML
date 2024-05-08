@@ -1,37 +1,223 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encabezado con cuadros HTML</title>
-    <style>
-        /* Estilos CSS para el encabezado */
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .box {
-            display: inline-block;
-            background-color: #fff; /* Color de fondo del cuadro */
-            color: #333;
-            padding: 10px;
-            margin: 0 10px; /* Margen horizontal entre los cuadros */
-            margin-bottom: 10px; /* Margen inferior */
-        }
-    </style>
+    
 </head>
+<h1>maquetado 1</h1>
 <body>
 
-<header>
-    <div class="box" style="background-color: rgb(239, 227, 227);">Cuadro 1</div>
-    <div class="box" style="background-color: #f2f7f2;">Cuadro 2</div>
-    <div class="box" style="background-color: #fdfdfe;">Cuadro 3</div>
-</header>
+    <div class="nav">
+        <div class="col">
+            BOX
+        </div>
+        <div class="col">
+            BOX
+        </div>
+        <div class="col">
+            BOX
+        </div>
+        <div class="col">
+            BOX
+        </div>
+        <div class="col">
+            BOX
+        </div>
+        <div class="clearfix"></div> 
+    </div>
 
-<!-- El resto del contenido de tu página iría aquí -->
+    <div class="header">
+        <div class="col2">
+            Banner
+        </div>
+        <div class="col3">Logo</div>
+        <div class="col3">Login</div>
+        <div class="col3">Form</div>
+       
+
+        <div class="clearfix"></div> 
+    </div>
+    <div class="main">
+        <div class="col4">Aside</div>
+        <div class="col5">Article</div>
+         <div class="col4">Aside</div>
+        <div class="clearfix"></div> 
+    </div>
+    
+    <div class="footer">
+        footer
+    </div>
+<h1>maquetado 2</h1>
+<div class="header">
+    <div class="col2">
+        Banner
+    </div>
+    <div class="col6">
+        Logo
+    </div>
+    <div class="clearfix"></div> 
+</div>
+
+<div class="nav">
+   
+
+ 
+</div>
+<div class="main">
+    
+    <div class="col7">Article</div>
+     <div class="col4">Aside</div>
+    <div class="clearfix"></div> 
+</div>
+
+<div class="footer">
+    footer
+</div>
+    <style>
+        .nav {
+            background-color: rgb(130, 214, 45);
+            border: 5px solid black;
+            margin-top: 10px;
+            padding: 23px;
+            width: calc(100% - 51px);
+
+            margin-bottom: -10px;
+        }
+
+        .header {
+            background-color: rgb(23, 42, 218);
+            border: 5px solid black;
+         
+            padding-top: 10px;
+            padding-bottom: 25px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 10px;
+            width: calc(100% - 25px);
+            margin-bottom: -10px;
+        }
+
+        .main {
+           
+            background-color: rgb(157, 177, 46);
+            border: 5px solid black;
+            padding: 10px;
+            margin-top: 10px;
+            width: calc(100% - 25px);
+        }
+
+        .footer {
+            background-color: rgb(219, 154, 34);
+            border: 5px solid #000 ;
+            padding-top: 10px;
+            padding-bottom: 25px;
+            padding-left: 10px;
+            padding-right: 10px;
+            
+            width: calc(100% - 25px);
+        }
+
+        .col {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            margin: 5px;
+            float: left;
+            width: 100px;
+            padding-top: 50px;
+            padding-bottom:50px;
+            padding-left: 72px;
+            padding-right: 72px;
+
+        }
+
+        .col2 {
+            background-color: #f2f2f2;
+            text-align: center;
+            margin: 10px;
+            float: left;
+            padding-top: 85px;
+            padding-bottom: 85px;
+            padding-left: 495px;
+            padding-right: 495px;
+           
+        }
+
+        .col3 {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            margin: 5px;
+            float: left;
+            width: 100px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 68px;
+            padding-right: 68px;
+
+        }
+
+
+        .col4 {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            margin: 5px;
+            float: left;
+            width: 100px;
+            padding-top: 150px;
+            padding-bottom: 150px;
+            padding-left: 68px;
+            padding-right: 68px;
+
+        }
+        .col5 {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            margin: 5px;
+            float: left;
+            width: 100px;
+            padding-top: 150px;
+            padding-bottom: 150px;
+            padding-left: 350px;
+            padding-right: 350px;
+
+        }
+        .col6 {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            margin: 5px;
+            float: left;
+            width: 100px;
+            padding-top: 87px;
+            padding-bottom: 87px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .col7 {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            margin: 5px;
+            float: left;
+            width: 100px;
+            padding-top: 150px;
+            padding-bottom: 150px;
+            padding-left: 470px;
+            padding-right: 470px;
+        }
+
+
+
+
+        .clearfix {
+            clear: both;
+        }
+    </style>
 
 </body>
 </html>
