@@ -1,0 +1,79 @@
+/* Atajo: *+h1,p,section,iframe,button{box-sizing:border-box} */
+*,
+h1, p, section, iframe, button {
+    box-sizing: border-box;
+}
+
+/* Atajo: body>margin:0;padding:0;font-family:sans-serif;line-height:1.6 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+    width: 600px;
+}
+
+/* Atajo: .header>padding:1rem;background:#f4f4f4;text-align:center */
+.header {
+    padding: 1rem;
+    background: #f4f4f4;
+    text-align: center;
+    width: 600px;
+}
+
+/* Atajo: .main>padding:2rem */
+.main {
+    padding: 2rem;
+}
+
+/* Atajo: .details>margin-bottom:2rem */
+.details {
+    margin-bottom: 2rem;
+}
+
+/* Atajo: .map>margin-bottom:2rem;text-align:center */
+.map {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Atajo: .form>max-width:400px;margin:0 auto;padding:1rem;border:1px solid #ccc;border-radius:5px;background:#f9f9f9 */
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+/* Atajo: label, input, button>display:block;width:100%;margin-bottom:1rem */
+label,
+input,
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Atajo: input>padding:0.5rem;border:1px solid #ccc;border-radius:5px */
+input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Atajo: button>padding:0.7rem;background:#007BFF;color:white;border:none;border-radius:5px;cursor:pointer */
+button {
+    padding: 0.7rem;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Atajo: button:hover>background:#0056b3 */
+button:hover {
+    background: #0056b3;
+}
