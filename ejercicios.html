@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios de JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function verificarEdad() {
+            var edad = prompt("Por favor, introduce tu edad:");
+            if (edad !== null) {
+                edad = parseInt(edad);
+                if (isNaN(edad)) {
+                    alert("Por favor, introduce un número válido.");
+                } else if (edad >= 18) {
+                    alert("Ya puedes conducir.");
+                } else {
+                    alert("Aún no puedes conducir.");
+                }
+            }
+        }
+
+        function mostrarCalificacion() {
+            var nota = prompt("Por favor, introduce una nota (número):");
+            if (nota !== null) {
+                nota = parseFloat(nota);
+                if (isNaN(nota)) {
+                    alert("Por favor, introduce un número válido.");
+                } else if (nota >= 0 && nota < 3) {
+                    alert("Muy deficiente");
+                } else if (nota >= 3 && nota < 5) {
+                    alert("Insuficiente");
+                } else if (nota >= 5 && nota < 6) {
+                    alert("Suficiente");
+                } else if (nota >= 6 && nota < 7) {
+                    alert("Bien");
+                } else if (nota >= 7 && nota < 9) {
+                    alert("Notable");
+                } else if (nota >= 9 && nota <= 10) {
+                    alert("Sobresaliente");
+                } else {
+                    alert("Por favor, introduce una nota entre 0 y 10.");
+                }
+            }
+        }
+
+        function pedirCadenas() {
+            var resultado = "";
+            while (true) {
+                var cadena = prompt("Introduce una cadena de texto (pulsa cancelar para finalizar):");
+                if (cadena === null) {
+                    break;
+                }
+                resultado += (resultado === "") ? cadena : "-" + cadena;
+            }
+            alert("Cadenas concatenadas: " + resultado);
+        }
+
+        function calcularLetraDNI() {
+            var letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+            while (true) {
+                var dni = prompt("Introduce tu número de DNI (pulsa cancelar para finalizar):");
+                if (dni === null) {
+                    break;
+                }
+                dni = parseInt(dni);
+                if (isNaN(dni) || dni < 0 || dni > 99999999) {
+                    alert("Número de DNI no válido. Por favor, introduce un número entre 0 y 99999999.");
+                } else {
+                    var letra = letras[dni % 23];
+                    alert("La letra de tu DNI es: " + letra);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Ejercicios de JavaScript</h1>
+    <button onclick="verificarEdad()">Ejercicio 1: Verificar Edad</button>
+    <button onclick="mostrarCalificacion()">Ejercicio 2: Mostrar Calificación</button>
+    <button onclick="pedirCadenas()">Ejercicio 3: Pedir Cadenas</button>
+    <button onclick="calcularLetraDNI()">Ejercicio 4: Calcular Letra DNI</button>
+</body>
+</html>
